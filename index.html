@@ -4,6 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Portfolio de Timéo</title>
 
 <style>
@@ -22,32 +23,32 @@ body {
 
 header {
     text-align: center;
-    padding: 65px 20px 45px;
+    padding: 75px 20px 55px;
 }
 
 header h1 {
     font-size: clamp(35px, 7vw, 65px);
     font-weight: 900;
     letter-spacing: 3px;
-    background: linear-gradient(90deg, #9b5cff, #36cfff);
+    background: linear-gradient(90deg, #a855f7, #38bdf8);
     -webkit-background-clip: text;
-    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 header p {
     color: #aaa;
-    margin-top: 15px;
-    letter-spacing: 3px;
+    margin-top: 18px;
+    letter-spacing: 5px;
     font-size: 13px;
 }
 
 .gallery {
     width: 90%;
     max-width: 1100px;
-    margin: 20px auto 70px;
+    margin: 0 auto 70px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 22px;
+    gap: 25px;
 }
 
 .photo {
@@ -55,19 +56,19 @@ header p {
     border: 1px solid #292941;
     border-radius: 16px;
     overflow: hidden;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .photo:hover {
     transform: translateY(-6px);
-    border-color: #9b5cff;
-    box-shadow: 0 0 25px #8b45ff44;
+    border-color: #a855f7;
+    box-shadow: 0 0 25px #a855f744;
 }
 
 .photo img {
     width: 100%;
+    height: auto;
     display: block;
-    object-fit: cover;
 }
 
 .photo:last-child {
@@ -81,7 +82,7 @@ footer {
     font-size: 12px;
 }
 
-@media(max-width: 650px) {
+@media (max-width: 650px) {
     .gallery {
         grid-template-columns: 1fr;
     }
@@ -101,14 +102,32 @@ footer {
 </header>
 
 <main class="gallery">
-    <div class="photo"><img src="image1.jpg" alt="Création 1"></div>
-    <div class="photo"><img src="image2.jpg" alt="Création 2"></div>
-    <div class="photo"><img src="image3.jpg" alt="Création 3"></div>
-    <div class="photo"><img src="image4.jpg" alt="Création 4"></div>
-    <div class="photo"><img src="image5.jpg" alt="Création 5"></div>
+
+    <div class="photo">
+        <img src="IMG_0585.jpeg" alt="Création 1">
+    </div>
+
+    <div class="photo">
+        <img src="IMG_0586.jpeg" alt="Création 2">
+    </div>
+
+    <div class="photo">
+        <img src="IMG_0589.jpeg" alt="Création 3">
+    </div>
+
+    <div class="photo">
+        <img src="IMG_0590.jpeg" alt="Création 4">
+    </div>
+
+    <div class="photo">
+        <img src="IMG_0591.jpeg" alt="Création 5">
+    </div>
+
 </main>
 
-<footer>© 2026 — Portfolio de Timéo</footer>
+<footer>
+    © 2026 — Portfolio de Timéo
+</footer>
 
 </body>
 </html>
